@@ -132,9 +132,10 @@ GameObject:
   - component: {fileID: 46920532}
   - component: {fileID: 46920531}
   - component: {fileID: 46920530}
+  - component: {fileID: 46920535}
   m_Layer: 0
   m_Name: Personagem
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -174,8 +175,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.0595295, y: 1.0386878, z: 1}
+  m_Center: {x: 0.004816681, y: 0.019343972, z: 0}
 --- !u!23 &46920532
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -238,12 +239,24 @@ Transform:
   m_GameObject: {fileID: 46920529}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6171251, y: -0.06, z: 2.12}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &46920535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46920529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c71d786b1b4037548b4aa0304c750f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,9 +491,10 @@ GameObject:
   - component: {fileID: 916793487}
   - component: {fileID: 916793486}
   - component: {fileID: 916793490}
+  - component: {fileID: 916793491}
   m_Layer: 0
   m_Name: Assassino
-  m_TagString: Untagged
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -504,7 +518,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.63
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -570,8 +584,8 @@ Transform:
   m_GameObject: {fileID: 916793485}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.33, y: 0.09, z: 2.96}
-  m_LocalScale: {x: 1.274, y: 1.274, z: 1.274}
+  m_LocalPosition: {x: -0.99, y: 0, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -590,9 +604,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nome: Assassino
   idade: 30
-  forca: 20
+  forca: 30
   velocidade: 15
   ataque: 10
+  formaDeAtaque: 0
+--- !u!114 &916793491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916793485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c71d786b1b4037548b4aa0304c750f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1694281398
 GameObject:
   m_ObjectHideFlags: 0

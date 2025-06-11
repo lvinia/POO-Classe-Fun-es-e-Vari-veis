@@ -30,7 +30,7 @@ public class Assassino : Personagem
         return this.ataque;
     }
     
-    public int AtaqueDoInimigo()
+    public int NovoAtaque()
     {
 
         int dano = 0;
@@ -48,4 +48,5 @@ public class Assassino : Personagem
 
         return dano;
     }
+    
 }
