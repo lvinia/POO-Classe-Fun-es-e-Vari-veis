@@ -35,7 +35,7 @@ public class Personagem : MonoBehaviour
     }
     public int ForcaDoPersonagem()
     {
-        return this.idade;
+        return this.forca;
     }
     
     public void AtribuirVelocidade(float velocidade)

@@ -12,7 +12,7 @@ public class TesteDeDano : MonoBehaviour
            
             personagem.AtribuirForca(forca_atual);
            
-            Debug.Log("O personagem " +personagem.NomeDoPersonagem()+" tem agora "+personagem.ForcaDoPersonagem());
+            Debug.Log("O personagem " +personagem.NomeDoPersonagem()+" tem agora "+personagem.ForcaDoPersonagem()+" de força");
         }
     }
 
